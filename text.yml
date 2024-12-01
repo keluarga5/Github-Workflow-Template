@@ -13,22 +13,22 @@ jobs:
     # Step 1: Clone the target repository
     - name: Clone RepositoryName repository
       run: |
-        git clone https://github.com/TanakaDomp/File_Name.git
+        git clone https://github.com/amiruldev20/mywabot-baileys
 
     # Step 2: Navigate into the LilyWa directory
-    - name: Change directory to RepositoryName
-      run: cd RepositoryName
+    - name: Change directory to mywabot-baileys
+      run: cd mywabot-baileys
 
     # Step 3: Unzip lilybot.zip file inside the LilyWa folder
-    - name: Unzip File_Name.zip
+    - name: Unzip mywabot-baileys.zip
       run: |
         sudo apt-get install unzip  # Install unzip tool if not already installed
-        unzip RepositoryName/File_Name.zip -d ./RepositoryName # Unzip File_Name.zip in the RepositoryName directory
+        unzip RepositoryName/mywabot-baileys.zip -d ./mywabot-baileys # Unzip mywabot-baileys.zip in the mywabot-baileys directory
 
     # Step 4: Install npm dependencies
     - name: Install npm dependencies
       run: |
-        cd RepositoryName
+        cd mywabot-baileys
         npm install
 
     # Step 5: Start the npm application
